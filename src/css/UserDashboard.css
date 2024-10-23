@@ -1,0 +1,93 @@
+/* UserDashboard.css */
+
+body {
+  font-family: Arial, sans-serif; /* Ensure consistent font */
+  background-color: #f0f0f0; /* Light background for the entire page */
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto; /* Center the dashboard with margin */
+  width: 90%; /* Slightly wider for better layout */
+  max-width: 900px; /* Max width to prevent it from stretching too much */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for better contrast */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+h3 {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Increased padding for better touch area */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Light background for each list item */
+}
+
+li p {
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Spacing between text and button */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Additional responsive styles */
+@media (max-width: 600px) {
+  .dashboard-container {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  li {
+    flex-direction: column; /* Stack items for smaller screens */
+    align-items: flex-start; /* Align text to the start */
+    padding: 10px; /* Less padding for smaller screens */
+  }
+
+  button {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    margin-top: 5px; /* Add spacing above button for stacked layout */
+  }
+}

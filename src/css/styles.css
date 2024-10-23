@@ -1,0 +1,60 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif; /* Standard font */
+  background-color: #f0f0f0; /* Light background for the entire page */
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container, .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  width: 400px; /* Wider width for better aesthetics */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for better contrast */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Darker color for the title */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #28a745; /* Green background for buttons */
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Additional responsive styles */
+@media (max-width: 600px) {
+  .signup-container, .login-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
